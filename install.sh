@@ -11,7 +11,7 @@ sudo apt upgrade -y
 
 sudo apt-get install xdotool unclutter sed chromium-browser -y
 
-sudo cp -f kiosk.sh ~/
+sudo cp -f .xsessionrc ~/
 sudo cp -r themes/spos /usr/share/plymouth/themes/
 
 sudo plymouth-set-default-theme spos -R

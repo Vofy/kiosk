@@ -8,7 +8,7 @@ sudo apt-get autoremove -y
 sudo apt-get update
 sudo apt-get upgrade -y
 
-sudo apt-get install xdotool unclutter sed plymouth -y
+sudo apt-get install xdotool unclutter sed -y
 
 sudo cp kiosk.sh ~/
 sudo cp kiosk.service /lib/systemd/system/

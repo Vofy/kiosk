@@ -9,5 +9,9 @@ sudo apt-get upgrade
 
 sudo apt-get install xdotool unclutter sed -y
 
+sudo cp kiosk.sh ~/
+sudo cp kiosk.service /lib/systemd/system/
 sudo cp themes/spos /usr/share/plymouth/themes/
+
 sudo plymouth-set-default-theme spos -R
+sudo systemctl enable --now kiosk.service

@@ -1,5 +1,5 @@
 #!/bin/bash
-echo -e "# Disable rainbow image at boot\ndisable_splash=1" >> /boot/config.txt
+echo -e "\n# Disable rainbow image at boot\ndisable_splash=1" >> /boot/config.txt
 echo -e "startx --" >> ~/.bashrc
 sudo apt purge wolfram-engine scratch scratch2 nuscratch sonic-pi idle3 smartsim java-common minecraft-pi libreoffice* lxde lxpanel lxdm lxde-common -y
 

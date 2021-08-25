@@ -1,4 +1,5 @@
 #!/bin/bash
+echo -e "# Disable rainbow image at boot\ndisable_splash=1" >> multiple.txt
 sudo apt-get purge wolfram-engine scratch scratch2 nuscratch sonic-pi idle3 smartsim java-common minecraft-pi libreoffice* -y
 
 sudo apt-get clean

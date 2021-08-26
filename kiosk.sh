@@ -9,7 +9,7 @@ xset -dpms
 while true; do
   killall -TERM chromium-browser 2>/dev/null;
   sleep 2;
-  killall -9 chromium-browser 2>/dev/null;;
+  killall -9 chromium-browser 2>/dev/null;
 
   sed -i 's/"exited_cleanly":false/"exited_cleanly":true/' /home/pi/.config/chromium/Default/Preferences
   sed -i 's/"exit_type":"Crashed"/"exit_type":"Normal"/' /home/pi/.config/chromium/Default/Preferences

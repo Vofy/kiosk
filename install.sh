@@ -9,7 +9,7 @@ sudo apt autoremove -y
 sudo apt update
 # sudo apt upgrade -y
 
-sudo apt-get install xdotool unclutter sed chromium-browser openbox xserver-xorg-core xinit rpd-plym-splash -y
+sudo apt-get install --no-install-recommends xdotool unclutter sed chromium-browser openbox xserver-xorg-core xinit rpd-plym-splash -y
 
 # Copy config files
 cp -f .xinitrc ~/

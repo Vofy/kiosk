@@ -27,7 +27,7 @@ sudo sed -i "`wc -l < /etc/rc.local` i\\\n# Run startx script\nstartx\n" /etc/rc
 sudo raspi-config nonint do_boot_splash 0
 
 # Enable autologin using raspi-config script
-sudo raspi-config nonint do_boot_behaviour B4
+sudo raspi-config nonint do_boot_behaviour B2
 
 # Reboot system
 sudo reboot

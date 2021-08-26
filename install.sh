@@ -33,6 +33,7 @@ sudo raspi-config nonint do_boot_splash 0
 
 # Enable autologin using raspi-config script
 sudo raspi-config nonint do_boot_behaviour B2
+sudo cp -f autologin.conf /etc/systemd/system/getty@tty1.service.d/
 
 # Set hostname using raspi-config script
 sudo raspi-config nonint do_hostname DM-141-VYCHOVATELNA-KAMERY

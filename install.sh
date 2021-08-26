@@ -18,7 +18,7 @@ sudo cp -r themes/spos /usr/share/plymouth/themes/
 sudo plymouth-set-default-theme spos -R
 
 # Disable rainbow image at boot
-sudo sed -i "$ a\n\n\n# Disable rainbow image at boot\ndisable_splash=1" /boot/config.txt
+sudo sed -i "$ a\\\n# Disable rainbow image at boot\ndisable_splash=1" /boot/config.txt
 
 # Run startx script
 sudo sed -i "`wc -l < /etc/rc.local` i\\\n# Run startx script\nstartx\n" /etc/rc.local

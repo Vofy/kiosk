@@ -25,6 +25,9 @@ sudo plymouth-set-default-theme spos -R
 # Disable rainbow image at boot
 sudo sed -i "$ a\\\n# Disable rainbow image at boot\ndisable_splash=1\n\n# Disable bloutooth\ndtoverlay=disable-bt\n\n# Disable boot delay\nboot_delay=0" /boot/config.txt
 
+# Disable cursor and raspberry logo
+sudo sed -i '${s/$/ vt.global_cursor_default=0 logo.nologo/}' /boot/cmdline.txt
+
 # Enable plymouth splashscreen using raspi-config script
 sudo raspi-config nonint do_boot_splash 0
 

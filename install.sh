@@ -8,7 +8,7 @@ sudo apt autoremove -y
 sudo apt update
 # sudo apt upgrade -y
 
-sudo apt-get install xdotool unclutter sed chromium-browser openbox xserver-xorg-core rpd-plym-splash -y
+sudo apt-get install xdotool unclutter sed chromium-browser openbox xserver-xorg-core xinit rpd-plym-splash -y
 
 # Copy config files
 mkdir -p ~/.config/openbox/autostart && cp -f kiosk.sh ~/.config/openbox/autostart

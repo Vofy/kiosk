@@ -8,10 +8,11 @@ sudo apt autoremove -y
 sudo apt update
 # sudo apt upgrade -y
 
-sudo apt-get install xdotool unclutter sed chromium-browser lightdm openbox xorg rpd-plym-splash -y
+sudo apt-get install xdotool unclutter sed chromium-browser openbox xserver-xorg-core rpd-plym-splash -y
 
 # Copy config files
-sudo cp -f .xsessionrc ~/
+cp -f .xsessionrc ~/
+cp -f .bash_profile ~/
 sudo cp -r themes/spos /usr/share/plymouth/themes/
 
 # Apply theme

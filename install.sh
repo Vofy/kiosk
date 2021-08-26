@@ -1,7 +1,7 @@
 #!/bin/bash
 # Remove unnecessary packages
 sudo apt purge wolfram-engine scratch scratch2 nuscratch sonic-pi idle3 smartsim java-common minecraft-pi libreoffice* geany python3-thonny dillo vlc bluez* pi-bluetooth* avahi-daemon -y
-# sudo systemctl disable avahi-deamon
+# sudo systemctl disable avahi-deamon bluetooth
 
 sudo apt clean
 sudo apt autoremove -y

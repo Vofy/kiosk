@@ -11,9 +11,9 @@ sudo apt update
 sudo apt-get install xdotool unclutter sed chromium-browser openbox xserver-xorg-core rpd-plym-splash -y
 
 # Copy config files
-cp -f .xsessionrc ~/
+mkdir -p ~/.config/openbox/autostart && cp -f kiosk.sh ~/.config/openbox/autostart
 cp -f .bash_profile ~/
-sudo cp -r themes/spos /usr/share/plymouth/themes/
+sudo cp -r grub-theme/spos /usr/share/plymouth/themes/
 
 # Apply theme
 sudo plymouth-set-default-theme spos -R

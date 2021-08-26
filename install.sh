@@ -1,6 +1,6 @@
 #!/bin/bash
 # Remove unnecessary packages
-sudo apt purge wolfram-engine scratch scratch2 nuscratch sonic-pi idle3 smartsim java-common minecraft-pi libreoffice* geany python3-thonny dillo vlc -y
+sudo apt purge wolfram-engine scratch scratch2 nuscratch sonic-pi idle3 smartsim java-common minecraft-pi libreoffice* geany python3-thonny dillo vlc bluez* pi-bluetooth* -y
 
 sudo apt clean
 sudo apt autoremove -y

@@ -16,6 +16,9 @@ cp -f .xinitrc ~/
 cp -f .bash_profile ~/
 sudo cp -r plymouth-theme/spos /usr/share/plymouth/themes/
 
+# Disable motd
+touch ~/.hushlogin
+
 # Get rid of "Wi-Fi is currently blocked by rfkill. Use raspi-config to set the country before use." message
 sudo raspi-config nonint do_wifi_country CZ
 

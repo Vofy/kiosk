@@ -13,5 +13,5 @@ while true; do
 	rm /home/pi/.config/chromium/SingletonLock
 
 	unclutter -idle 0.5 -root &
-	/usr/bin/chromium-browser --window-position=0,0 --window-size=1280,1024 --kiosk --incognito --noerrdialogs --disable --disable-default-apps --disable-single-click-autofill --disable-translate-new-ux --disable-translate --disable-infobars https://netbox.vofy.tech/login/?next=/
+	/usr/bin/chromium-browser --window-position=0,0 --window-size=1280,1024 --kiosk --incognito --noerrdialogs --disable-default-apps --disable-single-click-autofill --disable-translate-new-ux --disable-translate --disable-infobars https://netbox.vofy.tech/login/?next=/
 done

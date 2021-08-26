@@ -1,7 +1,3 @@
-#!/bin/sh
-#
-# Runs chromium and other tools necessary for kiosk
-
 xset s noblank
 xset s off
 xset -dpms

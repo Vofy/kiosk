@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# Runs chrome and other tools necessary for kiosk
+# Runs chromium and other tools necessary for kiosk
 
 xset s noblank
 xset s off

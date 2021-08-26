@@ -11,7 +11,7 @@ sudo apt update
 sudo apt-get install xdotool unclutter sed chromium-browser openbox xserver-xorg-core xinit rpd-plym-splash -y
 
 # Copy config files
-mkdir -p ~/.config/openbox/autostart && cp -f kiosk.sh ~/.config/openbox/autostart
+cp -f .xsessionrc ~/
 cp -f .bash_profile ~/
 sudo cp -r plymouth-theme/spos /usr/share/plymouth/themes/
 

@@ -28,3 +28,6 @@ sudo raspi-config nonint do_boot_splash 0
 
 # Enable autologin using raspi-config script
 sudo raspi-config nonint do_boot_behaviour B4
+
+# Reboot system
+sudo reboot

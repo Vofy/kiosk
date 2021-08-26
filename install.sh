@@ -11,7 +11,7 @@ sudo apt update
 sudo apt-get install xdotool unclutter sed chromium-browser openbox xserver-xorg-core xinit rpd-plym-splash -y
 
 # Copy config files
-cp -f .xsessionrc ~/
+cp -f .xinitrc ~/
 cp -f .bash_profile ~/
 sudo cp -r plymouth-theme/spos /usr/share/plymouth/themes/
 

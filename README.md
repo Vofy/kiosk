@@ -27,6 +27,8 @@ You can use official Raspberry software called rpi-imager, dd command or any oth
 1. Open terminal in **boot** partition of the MicroSD card
 2. Type `touch ssh` to create file called ssh, this automatically enables ssh
 
+## Remove MicroSD card from computer and insert it into Raspberry Pi
+
 ## How to run kiosk install script
 1. ssh to raspberry devide using ssh command `ssh pi@<ip-address>`, the defauld password is `raspberry`, and type `yes`
 2. Execute `passwd` to change default password

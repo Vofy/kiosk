@@ -5,7 +5,7 @@ sudo systemctl disable avahi-deamon bluetooth
 sudo apt update
 # sudo apt upgrade -y
 
-sudo apt-get install --no-install-recommends -y xdotool unclutter sed chromium-browser xserver-xorg-core xinit rpd-plym-splash openbox
+sudo apt-get install --no-install-recommends --no-install-suggests -y xdotool unclutter sed chromium-browser xserver-xorg xinit rpd-plym-splash openbox
 
 # Remove not needed packages
 sudo apt clean

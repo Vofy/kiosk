@@ -1,4 +1,4 @@
-exec openbox-session
+exec openbox-session &
 
 xset s noblank
 xset s off

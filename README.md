@@ -1,7 +1,7 @@
 # Kiosk installation script for Raspberry Pi
 This script can be used for customizing Raspberry Pi OS **Lite** to be used as kiosk even without mouse or keyboard. If your webpage requires login you can use chromium addon called [Auto Login](https://chrome.google.com/webstore/detail/auto-login/kjdgohfkopafhjmmlbojhaabfpndllgk).
 
-## How to install raspbian
+## How to install Raspberry Pi OS (Raspbian)
 
 ### Flash image to MicroSD card
 You can use official Raspberry software called rpi-imager, dd command or any other (Rufus, ...).

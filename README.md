@@ -34,6 +34,6 @@ You can use official Raspberry software called rpi-imager, dd command or any oth
 2. Execute `passwd` to change default password
 3. Install git `sudo apt install git`
 4. Clone **raspbian-kiosk** repository with `git clone https://github.com/Vofy/raspbian-kiosk.git`
-5. Change directory to ~/kiosk `cd kiosk`
+5. Change directory to ~/raspbian-kiosk `cd raspbian-kiosk`
 6. Now is great time to modify scripts (change plymouth splash screen image, change chromium url, ...)
 7. And finally, we are ready to execute last step - running the script `./install.sh`

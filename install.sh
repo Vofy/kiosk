@@ -1,12 +1,11 @@
 #!/bin/bash
-# Remove unnecessary packages
-sudo apt purge wolfram-engine scratch scratch2 nuscratch sonic-pi idle3 smartsim java-common minecraft-pi libreoffice* geany python3-thonny dillo vlc bluez* pi-bluetooth* avahi-daemon -y
-# sudo systemctl disable avahi-deamon bluetooth
+# Disable unused services
+sudo systemctl disable avahi-deamon bluetooth
 
 sudo apt update
 # sudo apt upgrade -y
 
-sudo apt-get install --no-install-recommends xdotool unclutter sed chromium-browser openbox xserver-xorg-core xinit rpd-plym-splash -y
+sudo apt-get install --no-install-recommends -y xdotool unclutter sed chromium-browser xserver-xorg-core xinit rpd-plym-splash openbox
 
 # Remove not needed packages
 sudo apt clean

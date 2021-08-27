@@ -3,13 +3,14 @@
 sudo apt purge wolfram-engine scratch scratch2 nuscratch sonic-pi idle3 smartsim java-common minecraft-pi libreoffice* geany python3-thonny dillo vlc bluez* pi-bluetooth* avahi-daemon -y
 # sudo systemctl disable avahi-deamon bluetooth
 
-sudo apt clean
-sudo apt autoremove -y
-
 sudo apt update
 # sudo apt upgrade -y
 
 sudo apt-get install --no-install-recommends xdotool unclutter sed chromium-browser openbox xserver-xorg-core xinit rpd-plym-splash -y
+
+# Remove not needed packages
+sudo apt clean
+sudo apt autoremove -y
 
 # Copy config files
 cp -f .xinitrc ~/

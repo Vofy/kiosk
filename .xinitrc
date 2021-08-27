@@ -1,7 +1,6 @@
 xset s noblank
 xset s off
 xset -dpms
-xsetroot -solid white
 
 while true; do
 	if pgrep -x "chromium" 2>/dev/null; then

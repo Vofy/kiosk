@@ -1,3 +1,5 @@
+exec openbox-session
+
 xset s noblank
 xset s off
 xset -dpms

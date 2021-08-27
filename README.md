@@ -30,7 +30,7 @@ You can use official Raspberry software called rpi-imager, dd command or any oth
 ### Remove MicroSD card from computer and insert it into Raspberry Pi
 
 ## How to run kiosk install script
-1. Ssh to raspberry devide using ssh command `ssh pi@<ip-address>`, the defauld password is `raspberry`, and type `yes`
+1. Ssh to raspberry devide using ssh command `ssh pi@<ip-address>`, the defauld password is `raspberry`, and type `yes` to accept fingerprint
 2. Execute `passwd` to change default password
 3. Install git `sudo apt install git`
 4. Clone **raspbian-kiosk** repository with `git clone https://github.com/Vofy/raspbian-kiosk.git`

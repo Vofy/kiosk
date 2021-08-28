@@ -1,13 +1,13 @@
 #!/bin/bash
-# Disable unused services
-sudo systemctl disable avahi-daemon bluetooth
 
+# Install updates
 sudo apt update
 # sudo apt upgrade -y
 
+# Install packages
 sudo apt-get install --no-install-recommends --no-install-suggests -y unclutter sed chromium-browser console-data xserver-xorg xinit x11-xserver-utils rpd-plym-splash matchbox-window-manager
 
-# Remove not needed packages
+# Remove not required packages
 sudo apt clean
 sudo apt autoremove -y
 

@@ -5,7 +5,7 @@ sudo systemctl disable avahi-deamon bluetooth
 sudo apt update
 # sudo apt upgrade -y
 
-sudo apt-get install --no-install-recommends --no-install-suggests -y xdotool unclutter sed chromium-browser xserver-xorg xinit x11-xserver-utils rpd-plym-splash matchbox-window-manager
+sudo apt-get install --no-install-recommends --no-install-suggests -y xdotool unclutter sed chromium-browser console-data xserver-xorg xinit x11-xserver-utils rpd-plym-splash matchbox-window-manager
 
 # Remove not needed packages
 sudo apt clean
@@ -41,8 +41,16 @@ sudo cp -f autologin.conf /etc/systemd/system/getty@tty1.service.d/
 # Set hostname using raspi-config script
 sudo raspi-config nonint do_hostname DM-141-VYCHOVATELNA-KAMERY
 
+# Set czech locales
+sudo sed -i 's/#cz_CZ.UTF-8 UTF-8/cs_CZ.UTF-8 UTF-8/g' /etc/locale.gen
+sudo locale-gen
+
 # Set czech keymap
-echo KEYMAP=cz > /etc/vconsole.conf
+sudo loadkeys cz-lat2
+sudo sed -i "$ a KEYMAP=cz" /etc/vconsole.conf
+
+# Set czech timezone
+sudo timedatectl set-timezone Europe/Prague
 
 # Reboot system
 sudo reboot

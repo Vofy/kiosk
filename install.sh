@@ -37,7 +37,7 @@ sudo dpkg-reconfigure locales
 # Set czech keymap
 sudo loadkeys cz-lat2
 sudo touch /etc/vconsole.conf
-echo "KEYMAP=cz" | sudo tee -a /etc/vconsole.conf
+echo "KEYMAP=cz" | sudo tee /etc/vconsole.conf
 
 # Set czech timezone
 sudo timedatectl set-timezone Europe/Prague

@@ -1,6 +1,6 @@
 #!/bin/bash
 # Disable unused services
-sudo systemctl disable avahi-deamon bluetooth
+sudo systemctl disable avahi-daemon bluetooth
 
 sudo apt update
 # sudo apt upgrade -y

@@ -31,16 +31,6 @@ sudo sed -i "$ a\\\n# Disable rainbow image at boot\ndisable_splash=1\n\n# Disab
 # Disable cursor and raspberry logo
 sudo sed -i '${s/$/ vt.global_cursor_default=0 logo.nologo/}' /boot/cmdline.txt
 
-# Enable plymouth splashscreen using raspi-config script
-sudo raspi-config nonint do_boot_splash 0
-
-# Enable autologin using raspi-config script
-sudo raspi-config nonint do_boot_behaviour B2
-sudo cp -f autologin.conf /etc/systemd/system/getty@tty1.service.d/
-
-# Set hostname using raspi-config script
-sudo raspi-config nonint do_hostname DM-141-VYCHOVATELNA-KAMERY
-
 # Set czech locales
 sudo sed -i 's/#cz_CZ.UTF-8 UTF-8/cs_CZ.UTF-8 UTF-8/g' /etc/locale.gen
 sudo locale-gen
@@ -52,6 +42,16 @@ sudo sed -i "$ a KEYMAP=cz" /etc/vconsole.conf
 
 # Set czech timezone
 sudo timedatectl set-timezone Europe/Prague
+
+# Enable plymouth splashscreen using raspi-config script
+sudo raspi-config nonint do_boot_splash 0
+
+# Enable autologin using raspi-config script
+sudo raspi-config nonint do_boot_behaviour B2
+sudo cp -f autologin.conf /etc/systemd/system/getty@tty1.service.d/
+
+# Set hostname using raspi-config script
+sudo raspi-config nonint do_hostname DM-141-VYCHOVATELNA-KAMERY
 
 # Reboot system
 sudo reboot

@@ -47,6 +47,7 @@ sudo locale-gen
 
 # Set czech keymap
 sudo loadkeys cz-lat2
+sudo touch /etc/vconsole.conf
 sudo sed -i "$ a KEYMAP=cz" /etc/vconsole.conf
 
 # Set czech timezone

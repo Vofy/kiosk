@@ -38,6 +38,7 @@ sudo dpkg-reconfigure locales
 sudo loadkeys cz-lat2
 sudo touch /etc/vconsole.conf
 echo "KEYMAP=cz" | sudo tee /etc/vconsole.conf
+sudo sed -i 's/XKBLAYOUT=\"\w*"/XKBLAYOUT=\"'cz'\"/g' /etc/default/keyboard
 
 # Set czech timezone
 sudo timedatectl set-timezone Europe/Prague

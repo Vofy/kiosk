@@ -1,8 +1,8 @@
-exec openbox-session
-
 xset s noblank
 xset s off
 xset -dpms
+
+matchbox-window-manager &
 
 while true; do
 	if pgrep -x "chromium" 2>/dev/null; then
@@ -13,6 +13,7 @@ while true; do
 	sed -i 's/"exit_type":"Crashed"/"exit_type":"Normal"/' /home/pi/.config/chromium/Default/Preferences
 	rm /home/pi/.config/chromium/SingletonLock
 
-	unclutter -idle 0.5 -root &
+	
+	unclutter &
 	/usr/bin/chromium-browser --kiosk --noerrdialogs --disable-default-apps --disable-single-click-autofill --disable-translate-new-ux --disable-translate --disable-infobars https://netbox.vofy.tech/login/?next=/
 done

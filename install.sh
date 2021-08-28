@@ -31,14 +31,15 @@ sudo sed -i "$ a\\\n# Disable rainbow image at boot\ndisable_splash=1\n\n# Disab
 # Disable cursor and raspberry logo
 sudo sed -i '${s/$/ vt.global_cursor_default=0 logo.nologo/}' /boot/cmdline.txt
 
-# Set czech locales
-sudo sed -i 's/#cz_CZ.UTF-8 UTF-8/cs_CZ.UTF-8 UTF-8/g' /etc/locale.gen
+# Set czech locales and disable british
+sudo sed -i 's/en_GB.UTF-8 UTF-8/# en_GB.UTF-8 UTF-8/g' /etc/locale.gen
+sudo sed -i 's/# cz_CZ.UTF-8 UTF-8/cs_CZ.UTF-8 UTF-8/g' /etc/locale.gen
 sudo locale-gen
 
 # Set czech keymap
 sudo loadkeys cz-lat2
 sudo touch /etc/vconsole.conf
-sudo sed -i "$ a KEYMAP=cz" /etc/vconsole.conf
+echo "KEYMAP=cz" | sudo tee -a /etc/vconsole.conf
 
 # Set czech timezone
 sudo timedatectl set-timezone Europe/Prague

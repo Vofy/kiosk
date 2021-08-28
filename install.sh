@@ -35,7 +35,6 @@ sudo sed -i '${s/$/ vt.global_cursor_default=0 logo.nologo/}' /boot/cmdline.txt
 sudo dpkg-reconfigure locales
 
 # Set czech keymap
-sudo loadkeys cz-lat2
 sudo touch /etc/vconsole.conf
 echo "KEYMAP=cz" | sudo tee /etc/vconsole.conf
 sudo sed -i 's/XKBLAYOUT=\"\w*"/XKBLAYOUT=\"'cz'\"/g' /etc/default/keyboard

@@ -2,7 +2,7 @@
 
 # Install updates
 sudo apt update
-# sudo apt upgrade -y
+sudo apt upgrade -y
 
 # Install packages
 sudo apt-get install --no-install-recommends --no-install-suggests -y unclutter sed chromium-browser console-data xserver-xorg xinit x11-xserver-utils rpd-plym-splash matchbox-window-manager
